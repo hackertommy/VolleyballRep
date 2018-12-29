@@ -1,0 +1,35 @@
+{
+    "match_id": "8a51d027-4fbf-4030-b1af-0f5f7a5bdbed",
+    "team_a": "CVC 17",
+    "team_b": "CVC 18 Red",
+    "winner": "team_b",
+    "games": [
+        {
+            "left": "team_a",
+            "right": "team_b",
+            "server": "right",
+            "left_score": 22,
+            "right_score": 25,
+            "left_timeouts": [
+                [ 19, 22 ],
+                [ 20, 24 ],
+            ],
+            "right_timeouts": []
+        },
+        {
+            "left": "team_b",
+            "right": "team_a",
+            "server": "right",
+            "left_score": 25,
+            "right_score": 23,
+            "left_timeouts": [
+                [ 22, 20 ],
+                [ 22, 21 ],
+            ],
+            "right_timeouts": [
+                [ 17, 13 ],
+                [ 21, 15 ],
+            ]
+        }
+    ]
+}
