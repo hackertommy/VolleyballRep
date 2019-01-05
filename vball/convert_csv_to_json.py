@@ -4,9 +4,9 @@ import os
 import csv
 import json
 
-# this is the function you need to fill in
+
 def convert_csv_to_json(match_id, csv_data):
-    # TODO: Tommy, fill in.
+
     team_a_games_won = csv_data[3][21]
     team_b_games_won = csv_data[4][21]
 
@@ -100,8 +100,8 @@ def convert_csv_to_json(match_id, csv_data):
             'middle': middle_team,
             'right': right_team,
             'server': first_serving,
-            'middle_score': int(csv_data[96][15]),
-            'right_score': int(csv_data[97][15]),
+            'middle_score': int(csv_data[3][18]),
+            'right_score': int(csv_data[4][18]),
             'middle_timeouts': [detect_timeouts(97,1,csv_data)],
             'right_timeouts': [detect_timeouts(97,3,csv_data)],
             'scores': [
@@ -163,6 +163,8 @@ def get_sideouts(serve_points, receive_points, side_of_serve):
 
     anchor_points = []
 
+    anchor_points.append([0, 0])
+
     if side_of_serve == 'middle' or side_of_serve == 'left':
        
 
@@ -223,9 +225,9 @@ def scores_in_order(anchor_points):
     points_total = anchor_points[len(anchor_points) - 1][0] + anchor_points[len(anchor_points) - 1][1]
 
 
+    # final_score_array.append([anchor_points[i][0], anchor_points[i][1]])
 
-    final_score_array.append([anchor_points[i][0], anchor_points[i][1]])
-
+    
     for overall in range(points_total):
 
         amount = 1
