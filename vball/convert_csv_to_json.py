@@ -45,13 +45,9 @@ def convert_csv_to_json(match_id, csv_data):
                 'left_score': int(csv_data[3][12]),
                 'right_score': int(csv_data[4][12]),
                 'server': first_serving,
-                'left_timeouts': [detect_timeouts(35,1,csv_data)],
-                'right_timeouts': [detect_timeouts(35,3,csv_data)],
-                'scores': [
-                    [
-                       scores_in_order(get_sideouts(get_score_array(firstservescores, csv_data), get_score_array(firstreceivescores, csv_data), first_serving))
-                    ]
-                ]
+                'left_timeouts': detect_timeouts(35,1,csv_data),
+                'right_timeouts': detect_timeouts(35,3,csv_data),
+                'scores': scores_in_order(get_sideouts(get_score_array(firstservescores, csv_data), get_score_array(firstreceivescores, csv_data), first_serving))
 
             },
             {
@@ -60,13 +56,9 @@ def convert_csv_to_json(match_id, csv_data):
                 'left_score': int(csv_data[4][15]),
                 'right_score': int(csv_data[3][15]),
                 'server': first_serving,
-                'left_timeouts': [detect_timeouts(66,1,csv_data)],
-                'right_timeouts': [detect_timeouts(66,3,csv_data)],
-                'scores': [
-                    [
-                        scores_in_order(get_sideouts(get_score_array(secondservescores, csv_data), get_score_array(secondreceivescores, csv_data), first_serving))
-                    ]
-                ]
+                'left_timeouts': detect_timeouts(66,1,csv_data),
+                'right_timeouts': detect_timeouts(66,3,csv_data),
+                'scores': scores_in_order(get_sideouts(get_score_array(secondservescores, csv_data), get_score_array(secondreceivescores, csv_data), first_serving))
             } 
         ]
     }
@@ -102,13 +94,9 @@ def convert_csv_to_json(match_id, csv_data):
             'server': first_serving,
             'middle_score': int(csv_data[3][18]),
             'right_score': int(csv_data[4][18]),
-            'middle_timeouts': [detect_timeouts(97,1,csv_data)],
-            'right_timeouts': [detect_timeouts(97,3,csv_data)],
-            'scores': [
-                [
-                    scores_in_order(get_sideouts(get_score_array(thirdservescores, csv_data), get_score_array(thirdreceivescores, csv_data), first_serving))
-                ]
-            ]   
+            'middle_timeouts': detect_timeouts(97,1,csv_data),
+            'right_timeouts': detect_timeouts(97,3,csv_data),
+            'scores': scores_in_order(get_sideouts(get_score_array(thirdservescores, csv_data), get_score_array(thirdreceivescores, csv_data), first_serving)) 
         })
 
     
