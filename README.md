@@ -5,7 +5,7 @@ I wanted to utilize data from volleyball matches in combination with machine lea
 
 Jupyter
 
-Sublime - API Used
+Sublime - IDE Used
 
 NumPy - Machine Learning Algorithms
 
