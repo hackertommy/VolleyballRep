@@ -10,15 +10,15 @@ Sublime - IDE Used
 NumPy - Machine Learning Algorithms
 
 
-### Author
+## Author
 
 Tom Serrino
 
-#### License
+## License
 
 This project is licensed under the MIT License - see the LICENSE.md file for details
 
-##### Acknowledgments
+## Acknowledgments
 
 Adam Beck for the scoresheets
 
