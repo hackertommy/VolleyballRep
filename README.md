@@ -3,7 +3,7 @@ I wanted to utilize data from volleyball matches in combination with machine lea
 
 ## Built With
 
-Jupyter
+Jupyter - Where I did most of my work
 
 Sublime - IDE Used
 
