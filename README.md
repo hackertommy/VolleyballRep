@@ -1,6 +1,10 @@
 # VolleyballRep
 I wanted to utilize data from volleyball matches in combination with machine learning algorithms to make predictions and gain insights on the sport at the high school level.
 
+# This Week's Itinerary
+1. Get the 1.0 of timeout analyzation up and running
+2. Contact coaches with possible questions they may have
+
 ## Built With
 
 Jupyter - Where I did most of my work
